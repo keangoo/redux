@@ -76,7 +76,7 @@ function hobbiesForCheckBoxes(hobbies) {
 }
 
 NewCatPage.propTypes = {
-	checkBoxHobbies: PropTypes.array.isRequired
+	checkBoxHobbies: PropTypes.array.isRequired,
 	actions: PropTypes.object.isRequired
 }
 

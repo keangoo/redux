@@ -8,7 +8,7 @@ export default function catReducer(state = initialState.cats, action) {
 			return action.cats;
 		case types.UPDATE_CAT_SUCCESS:
 			return [
-				...state.filter(cat => cat.id !== action.cat.id),Object.assing({}, action.cat);
+				...state.filter(cat => cat.id !== action.cat.id),Object.assing({}, action.cat)
 			];
 		case types.CREATE_CAT_SUCCESS:
 			browserHistory.push(`/cats/${action.cat.id}`);

@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react';
 import TextInput from '../common/TextInput';
-import CheckBox form '../common/CheckBox';
+import CheckBox from '../common/CheckBox';
 
 class CatForm extends React.Component {
 	constructor(props) {

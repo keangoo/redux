@@ -109,14 +109,13 @@ function collectCatHobbies(hobbies, cat) {
 
 function mapDispatchToProps(dispatch) {
 	return {
-		actions: bindActionCreators(catActions, dispatch);
+		actions: bindActionCreators(catActions, dispatch)
 	};
 }
 
 function mapStateToProps(state, ownProps) {
 	const stateHobbies = Object.assign([], state.hobbies);
 	let checkBoxHobbies = [];
-	let catHobbies = [];
 	let cat = {name: '', breed: '', weight: '', temperament: '', hobby_ids: []};
 	let catHobbies = [];
 	const catId = ownProps.params.id;

@@ -11,7 +11,7 @@ export function loadCats() {
 	};
 }
 
-export function updateCat() {
+export function updateCat(cat) {
 	return function(dispatch) {
 		return catApi.updateCat(cat).then(responseCat => {
 			dispatch(updateCatSuccess(responseCat));
@@ -44,7 +44,7 @@ export function deleteCat(cat) {
 	}
 }
 
-export function loadcatsSuccess(cats) {
+export function loadCatsSuccess(cats) {
 	return {type: types.LOAD_CATS_SUCCESS, cats};
 }
 

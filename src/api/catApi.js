@@ -5,7 +5,7 @@ class CatApi {
 			headers: new Headers({
 				'Content-Type': 'application/json'
 			}),
-			body: JSON.stringify({cat: cat});
+			body: JSON.stringify({cat: cat})
 		})
 	}
 	static createCat(cat) {
